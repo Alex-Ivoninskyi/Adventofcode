@@ -1,9 +1,7 @@
 s = open('input.txt').read()
 ans = 20151125
-col = s[93:97]
-row = s[80:84]
-row = int(row)
-col = int(col)
+col = int(s[93:97])
+row = int(s[80:84])
 k = 1 - row
 row += col - 1
 while row > 0:
