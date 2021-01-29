@@ -1,7 +1,6 @@
-s = open('input.txt').read()
+import re
 ans = 20151125
-col = int(s[93:97])
-row = int(s[80:84])
+row, col = list(map(int, re.findall(r'\d+', open('input.txt').read()))
 k = 1 - row
 row += col - 1
 while row > 0:
